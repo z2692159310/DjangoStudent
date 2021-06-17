@@ -1,13 +1,15 @@
 # Django-Student
 
 ### 介绍
+
   Django 实现学生后台管理系统
 
 ### 软件架构
+
   Python3.7+Django2.2+Xadmin2 实现学生后台管理系统
 
-
 ### 安装教程
+
 #### 1. 配置Python3.6(及以上)的虚拟环境
 
 #### 2. 装包
@@ -42,7 +44,7 @@
   ```
   
 
-### 4. <font color="red">报错</font>
+#### 4. <font color="red">报错</font>
 
 + 出现下面错误
 
@@ -90,7 +92,7 @@
   python manage.py runserver
   ```
 
-#### 5. 进入站点
+### 5. 进入站点
 
 + 浏览器内输入
 
@@ -103,36 +105,34 @@
   密码：admin123
   ```
 
-### 使用说明
+### 6. 使用说明
 
-####   1.**学生管理系统**
+####  1. 学生管理系统
 
-![DjangoStudent_1](https://gitee.com/zxiaosi/img/raw/master/Python/DjangoStudent_1.png)
+![](https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/student.png)
 
-####   2.学生信息的增操作
+####  2. 学生信息的增操作
 
-![DjangoStudent_2](https://gitee.com/zxiaosi/img/raw/master/Python/DjangoStudent_2.png)
+![](https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/add.png)
 
-####   3.学生信息的删操作
+####  3. 学生信息的删操作
 
-![DjangoStudent_3](https://gitee.com/zxiaosi/img/raw/master/Python/DjangoStudent_3.png)
+![](https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/delete.png)
 
-####   4.学生信息的改操作
+####  4. 学生信息的改操作
 
-![DjangoStudent_4](https://gitee.com/zxiaosi/img/raw/master/Python/DjangoStudent_4.png)
+![](https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/update.png)
 
+### 7. 其他
 
+####  1. 搜索(搜索内容可以是学生姓名、班级名、课程号)
 
-### 其他
+![](https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/搜索.png)
 
-####  1.搜索(搜索内容可以是学生姓名、班级名、课程号)
+####   2. 过滤器(按性别过滤)
 
-![DjangoStudent_5](https://gitee.com/zxiaosi/img/raw/master/Python/DjangoStudent_5.png)
+![](https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/过滤器.png)
 
-####   2.过滤器(按性别过滤)
+#### 3. 主题
 
-![DjangoStudent_6](https://gitee.com/zxiaosi/img/raw/master/Python/DjangoStudent_6.png)
-
-#### 3.主题
-
-![DjangoStudent_7](https://gitee.com/zxiaosi/img/raw/master/Python/DjangoStudent_7.png)
+![](https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/主题.png)
