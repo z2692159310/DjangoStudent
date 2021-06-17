@@ -8,9 +8,9 @@
 
 
 ### 安装教程
-####   1.配置Python3.6(及以上)的虚拟环境
+#### 1. 配置Python3.6(及以上)的虚拟环境
 
-####   2.装包
+#### 2. 装包
 
 + 安装运行所需的包	
 
@@ -27,7 +27,7 @@
 
   > https://blog.csdn.net/sinat_21591675/article/details/82770360
 
-####   3.启动服务
+#### 3. 启动服务
 
 + 进入“终端”CMD命令，进入项目apps文件夹
 
@@ -41,33 +41,56 @@
   python manage.py runserver
   ```
   
-  <font color='red'>第一次启动较慢！！！</font>
-  
-  （如果长时间访问不到且控制台报错，可以实行以下操作）
-  
-  ```python
-  找到python解释器
-  |-- External Libraries
-  	|-- < python 3.7(解释器版本) >
-      	|-- python-3.7.0
-          	|-- Lib
-              	|-- wsgiref
-                  	|-- headers.py
-  ```
-  
-  ![Django启动报错-1](https://gitee.com/zxiaosi/img/raw/master/Python/Django启动报错-1.png)
-  
-  之后填上如下代码：
-  
-  ```python
-  return str(self).encode('utf-8')
-  ```
-  
-  ![Django启动报错-2](https://gitee.com/zxiaosi/img/raw/master/Python/Django启动报错-2.png)
-  
-  重新开启服务即可！！！
 
-#### 4.进入站点
+### 4. <font color="red">报错</font>
+
++ 出现下面错误
+
+  ```sh
+  Traceback (most recent call last):
+    File "manage.py", line 21, in <module>
+      main()
+    File "manage.py", line 17, in main
+      execute_from_command_line(sys.argv)
+    File "D:\git\PythonProjects\DjangoStudent\venu\lib\site-packages\django\core\ma
+  nagement\__init__.py", line 381, in execute_from_command_line
+      utility.execute()
+      
+  ...
+  
+  # 注意看下面这个文件路径
+    File "D:\git\PythonProjects\DjangoStudent\venu\lib\site-packages\xadmin\plugins
+  \importexport.py", line 48, in <module>
+      from import_export.admin import DEFAULT_FORMATS, SKIP_ADMIN_LOG, TMP_STORAGE_
+  CLASS
+  ImportError: cannot import name 'SKIP_ADMIN_LOG' from 'import_export.admin' (D:\g
+  it\PythonProjects\DjangoStudent\venu\lib\site-packages\import_export\admin.py)
+  
+  ```
+
++ 找到虚拟环境下的包所在的路径，我的是 `D:\git\PythonProjects\DjangoStudent\venu\lib\site-packages` ，然后找到里面的 `\xadmin\plugins\importexport.py` 文件，修改如下
+
+  ```python
+  # 大约在 47-50 行之间
+  from django.db import transaction
+  
+  # from import_export.admin import DEFAULT_FORMATS, SKIP_ADMIN_LOG, TMP_STORAGE_CLASS
+  from import_export.admin import DEFAULT_FORMATS, ImportMixin, ImportExportMixinBase
+  
+  from import_export.resources import modelresource_factory
+  ```
+
++ 如图所示
+
+  ![](https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/报错.png)
+
++ 重启启动服务
+
+  ```python
+  python manage.py runserver
+  ```
+
+#### 5. 进入站点
 
 + 浏览器内输入
 
