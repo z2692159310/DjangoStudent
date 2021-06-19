@@ -109,30 +109,34 @@
 
 ####  1. 学生管理系统
 
-![](https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/student.png)
+![](https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/student.gif)
 
 ####  2. 学生信息的增操作
 
-![](https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/add.png)
+![](https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/add.gif)
 
 ####  3. 学生信息的删操作
 
-![](https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/delete.png)
+![](https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/delete-1624076965820.gif)
 
 ####  4. 学生信息的改操作
 
-![](https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/update.png)
+![](https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/update-1624076976733.gif)
+
+#### 5. 学生信息的查看操作
+
+![](https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/show-1624077005138.gif)
 
 ### 7. 其他
 
 ####  1. 搜索(搜索内容可以是学生姓名、班级名、课程号)
 
-![](https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/搜索.png)
+![](https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/select-1624077313300.gif)
 
 ####   2. 过滤器(按性别过滤)
 
-![](https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/过滤器.png)
+![](https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/sex.gif)
 
 #### 3. 主题
 
-![](https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/主题.png)
+![](https://gitee.com/zxiaosi/image/raw/master/Project/Python/Django-StudentMS/theme.gif)
